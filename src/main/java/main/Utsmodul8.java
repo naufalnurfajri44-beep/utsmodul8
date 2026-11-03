@@ -6,11 +6,11 @@ package main;
 
 /**
  *
- * @author LENOVO
+ * @author Dimas
  */
 public class Utsmodul8 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Toyota GR Camry 7-cylinder");
     }
 }
