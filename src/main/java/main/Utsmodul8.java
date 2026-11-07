@@ -8,9 +8,26 @@ package main;
  *
  * @author Dimas
  */
+
+import view.MainFrame;
+import javax.swing.SwingUtilities;
+import javax.swing.UIManager;
+
 public class Utsmodul8 {
 
     public static void main(String[] args) {
-        System.out.println("Toyota GR Camry 7-cylinder");
+        SwingUtilities.invokeLater(() -> {
+            try {
+                UIManager.setLookAndFeel(
+                        UIManager.getSystemLookAndFeelClassName()
+                );
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            MainFrame mainFrame = new MainFrame();
+            mainFrame.setLocationRelativeTo(null);
+            mainFrame.setVisible(true);
+        });
     }
 }
